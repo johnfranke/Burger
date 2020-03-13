@@ -1,0 +1,49 @@
+<div class="container">
+	<div class="row text-center">
+	<div class="text-center col-md-6 mx-auto"> <!-- header -->
+		<img class="img-responsive icon head" src="./assets/img/burger.png">
+	</div> 
+		<div class="text-center col-md-6 mx-auto top">
+			<BR> <!-- header -->
+		<h2>Welcome to the best burger joint</h2>
+
+		<h1>Eat-da-Burger!</h1>
+		<p class="instructions">Order your favorite burger by typing it below. Once it is ready it will show up in the 'to be eaten' section. Click the knife and fork to eat any burger in the 'to be eaten' section. Click the waiter to order more of any burger out of the 'already devoured' section.</p>
+	</div>
+	</div>
+
+	<div class="row orderup  text-center">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-10">
+		<input type="text" class="form-control" id="name" placeholder="Place your order here..."><button type="submit" id="submit">Order up!</button>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div> <!-- survey row -->
+
+	<div class="row menu"> <!-- burgers -->
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <!-- left column -->
+			<h1 id="left">To Be Eaten...</h1>
+			{{#each burgers}}
+			{{#unless devoured}}
+			<div class="burgerblock">
+				<img src="./assets/img/burger.png" class="tinyicon burgericon"><img src="./assets/img/eat.png" class="tinyicon eaticon" data-id="{{this.id}}"><h2>{{burger_name}}</h2>
+			</div>
+			{{/unless}}
+			{{/each}}
+		</div> <!-- left column -->
+
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6"> <!-- right column -->
+			<h1 id="right">Already Devoured!</h1>
+			{{#each burgers}}
+			{{#if devoured}}
+			<div class="burgerblock">
+				<img src="./assets/img/burger.png" class="tinyicon burgericon eaten"><img src="./assets/img/waiter.png" class="tinyicon waitericon" data-id="{{this.id}}"><h2>{{burger_name}}</h2>
+			</div>
+			{{/if}}
+			{{/each}}
+		</div> <!-- right column -->
+	</div> <!-- burgers row -->
+
+</div> <!-- container -->
