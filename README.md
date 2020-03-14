@@ -21,4 +21,5 @@ MySQL
 Heroku
 
 Deployed link: https://blooming-depths-79016.herokuapp.com/
+
 This was also added to my porfolio here: https://johnfranke.github.io/ 
