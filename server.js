@@ -1,4 +1,5 @@
 // initializes Node.js packages
+var bodyParser = require("body-parser");
 var express = require("express");
 var exphbs = require("express-handlebars");
 
