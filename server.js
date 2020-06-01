@@ -2,6 +2,7 @@
 var bodyParser = require("body-parser");
 var express = require("express");
 var exphbs = require("express-handlebars");
+var compression = require('compression')
 
 // initializes Express.js server and defines port
 var app = express();
@@ -10,6 +11,8 @@ var PORT = process.env.PORT || 8080;
 // sets up data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(compression());
 
 // sets up Handlebars.js
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));

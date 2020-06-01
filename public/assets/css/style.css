@@ -3,6 +3,8 @@
 body {
 	font-family: 'Anton', sans-serif;
 	font-size: 15px;
+	background-image: url('../img/bg.jpg');
+	background-color: black;
 }
 
 div.container {
@@ -18,8 +20,8 @@ div.burgerblock {
 }
 
 .top {
-	background-color: #ffa114;
-	border-radius: 15px;
+	background-color: #010006;
+	border-radius: 5px;
 	height: 100%
 }
 
@@ -79,8 +81,9 @@ img.eaten {
 /* ------------------------------------ HEADERS AND TEXT */
 
 h1 {
-	font-size: 80px;
-	color: white;
+	font-family: 'Teko', sans-serif;
+	font-size: 75px;
+	color: #ffea73;
 }
 
 h1#left, h1#right {
@@ -91,14 +94,14 @@ h2 {
 	display: inline-block;
 	margin-left: 15px;
 	font-size: 32px;
-	color: #5f4d1c;
+	color: #b1b1b1;
 }
 
 p.instructions {
 	font-size: 18px;
 	margin-top: 25px;
 	margin-bottom: 50px;
-	color: #5f4d1c;
+	color: #b1b1b1;
 }
 
 p.footer {
