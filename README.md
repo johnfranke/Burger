@@ -15,22 +15,30 @@ You can play with this application on Heroku. This is an application which allow
 
 This project showcases MySQL, Node, Express, Handlebars and an ORM. It follows the MVC design pattern; using Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 
-Technologies Used: 
+## Technologies Used 
 
 HTML
+
 CSS
+
 Bootstrap
+
 JavaScript
+
 jQuery
+
 AJAX
+
 APIs
+
 Node.js
+
 Node.js packages (body-parser, express, express-handlebars, mysql)
+
 Express.js
+
 Handlebars.js
+
 MySQL
+
 Heroku
-
-Deployed link: https://blooming-depths-79016.herokuapp.com/
-
-This was also added to my porfolio here: https://johnfranke.github.io/ 
